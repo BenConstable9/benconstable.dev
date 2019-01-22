@@ -1,0 +1,145 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    height: 50px;
+    padding: 10px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    background-color: #ff4b3e;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 26px;
+}
+
+header #icon {
+    position: absolute;
+    bottom: 5px;;
+    right: 10px;
+    font-size: 26px;
+    color: #fff;
+}
+
+#banner {
+    margin: 50px 0px 0px 0px;
+    padding: 100px 0 150px 0;
+    background-image: url('../images/code.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+    color: #fff;
+}
+
+#banner h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 5em;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#banner a {
+    color: #fff;
+}
+
+/* Inspired By */
+.seperator_before, seperator_after {
+    background: #1abddd;
+    z-index: 1;
+    margin: -50px 0;
+    padding: 10px 10px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.seperator_before:before, .seperator_after:after {
+    content: '';
+    height: 100%;
+    background: #1abddd;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+}
+.seperator_before:before {
+    top: 0;
+    transform: skewY(1deg);
+    transform-origin: 100%;
+}
+.seperator_after:after {
+    bottom: 0;
+    transform: skewY(-1deg);
+    transform-origin: 100%;
+}
+
+.seperator_before h3, .seperator_after h3 {
+    font-size: 2.5em;
+}
+
+.seperator_before p, .seperator_after p {
+    font-size: 0.8em;
+}
+
+.seperator_before a, seperator_after a {
+    color: #fff;
+}
+
+a.square {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ff4b3e;
+    color: #ff4b3e;
+    font-weight: 500;
+    padding: 10px 20px 10px 20px;
+}
+
+a.square:hover {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#about {
+    margin: 120px 0px 120px 0px;
+    text-align: center;
+}
+
+.tag {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #1abddd;
+    margin-bottom: 0px;
+}
+
+#projects {
+    margin: 120px 0px 120px 0px;
+    color: black;
+    text-align: center;
+}
+
+#projects h4 {
+    margin-top: 20px;
+    color: #ff4b3e;
+    font-weight: 700;
+}
+
+#projects .tech {
+    font-style: italic;
+    font-weight: 600;
+    color: #1abddd;
+    margin-bottom: 25px;
+}
